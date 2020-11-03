@@ -1,0 +1,65 @@
+/*Covers eveything inside the body of the entire website */
+body{
+    background-color: #ccc;
+    font-family: Helvetica, sans-serif;
+    color: #222;
+    margin-top: 100px;
+}
+
+/*Affects all images on the screen. Be the same width as the container that you've put it in. Will expand/contract
+ with that ccontainer. Default*/
+
+img{
+    width: 100%; /*Makes images responsive & scale with the size of the browser*/
+}
+
+/*Edits my name*/
+h1{
+    margin: 15px 0;
+}
+
+/*Edits the discription under my name*/
+h2{
+    margin: 0;
+    font-weight: 100;
+}
+
+.card{
+    background-color: #f3f3f3;
+    border-radius: 15px; /*Determin what your rounded corners look like*/
+    margin: 0 auto; /*Centers your website design on the page*/
+    width: 400px;
+    text-align: center; /*Centers your text*/
+    
+    /*Adds drop shadow to the card*/
+    box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+    border: 1px solid #aaa;
+}
+
+/*Shapes self pic image to small circular avatar*/
+.card .avatar{
+box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
+width: 100px;
+border-radius: 50%;
+margin-top: -50px;
+}
+
+.contacts{
+    /*Do these ul/ol before you get started to center things & eliminate other variables*/
+    margin: 0; /*Allows you to create centered web designs that expand & contract with the browser window*/
+    padding: 0;
+    list-style-type: none; /*Changes bullets, numbers, etc that you see. none gets rid of bullets */
+}
+
+.contacts li{
+    width: 30px;
+    display: inline-block; /*change the layout of the icons to display inline*/
+    padding: 20px 10px;/*Add space around the images*/
+}
+
+/*Shadow appears when user hovers over an image*/
+.contacts li a img:hover{
+    opacity: 0.5;
+    transition: opacity ease-in-out 0.2s;
+
+}
